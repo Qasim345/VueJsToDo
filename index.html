@@ -179,7 +179,7 @@
     <h2><span>TO</span>DO <span>A</span>pp</h2>
     <div class="input">
       <input type="text" v-model="text" placeholder="Add a new task" max="20" />
-      <button @click="tasks.push(text);text=''" onclick="return chk()">Add <span id="s">save_alt</span></button>
+      <button @click="tasks.push(text);text=''" onclick="chk()">Add <span id="s">save_alt</span></button>
     </div>
     <div class="line"></div>
     <div class="tasks">
