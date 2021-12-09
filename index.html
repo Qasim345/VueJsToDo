@@ -178,7 +178,7 @@
   <div id="container">
     <h2><span>TO</span>DO <span>A</span>pp</h2>
     <div class="input">
-      <input type="text" v-model="text" placeholder="Add a new task" max="20" />
+      <input type="text" v-model="text" placeholder="Add a new task" max="20" required/>
       <button @click="tasks.push(text);text=''" onclick="chk()">Add <span id="s">save_alt</span></button>
     </div>
     <div class="line"></div>
@@ -196,6 +196,7 @@
   function chk(){
     var inp = document.querySelector("input").value
     if(inp == ""){
+      alert("Please fill this input")
       return false;
     }else{
       return true;
